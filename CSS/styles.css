@@ -106,7 +106,7 @@ body {
     display: block;
     width: 10rem;
     position: absolute;
-    top: 10rem;
+    top: 40%;
     left: -5rem;
   }
 }
@@ -146,17 +146,23 @@ body {
   color: #f47c57;
 }
 
+.faq-answer {
+  margin: 0;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0ms 400ms ease, opacity 400ms 0ms ease;
+}
+
 .answer {
   width: 95%;
-  font-size: 1.2rem;
+  font-size: 1em;
+  margin: 1rem;
 }
 
 .show {
-  display: inline-block;
-}
-
-.hiden {
-  display: none;
+  height: auto;
+  opacity: 1;
 }
 
 .rotate {
